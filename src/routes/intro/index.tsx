@@ -12,7 +12,7 @@ import FooterWrapper from "./FooterWrapper";
 export default function Intro() {
     const [surahList, setSurahList] = useState<PaginatedSurahList | null>(null);
     const [loading, setLoading] = useState(true);
-
+    //test
     useEffect(() => {
         surahsList({ query: { mushaf: "hafs", limit: 200 } })
             .then((data) => {
